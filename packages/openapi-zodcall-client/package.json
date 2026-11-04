@@ -1,0 +1,55 @@
+{
+  "name": "openapi-zodcall-client",
+  "version": "0.1.0",
+  "description": "Generate a zodcall API client from OpenAPI",
+  "keywords": [
+    "client",
+    "openapi",
+    "zod",
+    "zodcall"
+  ],
+  "homepage": "https://github.com/nakita628/zodcall/tree/main/packages/openapi-zodcall-client#readme",
+  "bugs": {
+    "url": "https://github.com/nakita628/zodcall/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakita628/zodcall.git",
+    "directory": "packages/openapi-zodcall-client"
+  },
+  "bin": {
+    "openapi-zodcall-client": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "check": "vp check",
+    "fix": "vp check --fix",
+    "test": "vp test run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^13.1.0",
+    "@effect/platform-node": "4.1.2",
+    "@typespec/compiler": "1.17.0",
+    "@typespec/openapi3": "1.17.0",
+    "effect": "4.1.2",
+    "oas-truth": "0.6.1",
+    "oxfmt": "^0.75.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0"
+  }
+}

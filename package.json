@@ -1,0 +1,18 @@
+{
+  "name": "zodcall-monorepo",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "vp run -r build",
+    "test": "vp run -r test",
+    "typecheck": "vp run -r typecheck",
+    "check": "vp check",
+    "fix": "vp check --fix"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite-plus": "1.4.0"
+  },
+  "packageManager": "pnpm@12.15.0"
+}
