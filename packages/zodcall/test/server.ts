@@ -1,5 +1,5 @@
 import { createServer, type IncomingMessage, type Server } from "node:http";
-import { z } from "zod";
+import * as z from "zod";
 
 const searchBody = z.object({ name: z.string() });
 

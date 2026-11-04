@@ -1,5 +1,11 @@
 # openapi-zodcall-client
 
+## 0.1.1
+
+### Patch Changes
+
+- Document the generated file, which imports zod as a namespace (`import * as z from "zod"`).
+
 ## 0.1.0
 
 ### Minor Changes

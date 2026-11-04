@@ -1,6 +1,6 @@
 {
   "name": "zodcall",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Type-safe, fetch-based API client with zod validation and autocompletion",
   "keywords": [
     "api",

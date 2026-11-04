@@ -1,5 +1,11 @@
 # zodcall
 
+## 0.1.1
+
+### Patch Changes
+
+- Import zod as a namespace (`import * as z from "zod"`) in the README and tests.
+
 ## 0.1.0
 
 ### Minor Changes

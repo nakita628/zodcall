@@ -19,6 +19,30 @@ The generated file contains:
 - `createClient(baseURL, options?)`, a `Zodcall` instance for `api`
 
 ```ts
+import { makeApi, Zodcall } from "zodcall";
+import type { ZodcallOptions } from "zodcall";
+import * as z from "zod";
+
+export const PetSchema = z.object({ id: z.int(), name: z.string() });
+
+export const api = makeApi([
+  {
+    method: "get",
+    path: "/pets/:petId",
+    alias: "getPet",
+    parameters: [{ name: "petId", type: "Path", schema: z.int() }],
+    response: PetSchema,
+  },
+]);
+
+export function createClient(baseURL: string, options?: ZodcallOptions) {
+  return new Zodcall(baseURL, api, options);
+}
+```
+
+Calling it:
+
+```ts
 import { createClient } from "./client";
 
 const client = createClient("https://api.example.com");
