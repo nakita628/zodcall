@@ -21,7 +21,7 @@ Requires Node 20.3+ (or any runtime with `fetch` and `AbortSignal.any`). Enablin
 
 ```ts
 import { Zodcall, makeApi } from "zodcall";
-import { z } from "zod";
+import * as z from "zod";
 
 const user = z.object({ id: z.number(), name: z.string() });
 

@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it, vi } from "vite-plus/test";
-import { z } from "zod";
+import * as z from "zod";
 import * as zm from "zod/mini";
 import {
   Zodcall,

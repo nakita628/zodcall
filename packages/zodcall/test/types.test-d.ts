@@ -1,5 +1,5 @@
 import { describe, expectTypeOf, it } from "vite-plus/test";
-import { z } from "zod";
+import * as z from "zod";
 import {
   type ApiOf,
   apiBuilder,
