@@ -62,11 +62,10 @@ jobs:
         env:
           # The packages: one directory under packages/ per line. A new package is a new line here
           # (and in the dispatch choices above); a line starting with `#` is left out of the release.
-          # Both start left out: remove the `#` once the package has a version and a CHANGELOG.md
-          # entry to publish (the first publish of a new name cannot use trusted publishing yet).
+          # A package is listed once it has a version and a CHANGELOG.md entry to publish.
           PACKAGES: |
-            # zodcall
-            # openapi-zodcall-client
+            zodcall
+            openapi-zodcall-client
           CHOSEN: ${{ inputs.package || 'all' }}
         run: |
           set -euo pipefail
