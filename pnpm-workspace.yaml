@@ -1,0 +1,5 @@
+packages:
+  - packages/*
+minimumReleaseAgeExclude:
+  - oas-truth@0.6.1
+  - schema-truth@0.8.4
