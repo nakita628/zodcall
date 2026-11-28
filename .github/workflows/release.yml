@@ -182,7 +182,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: "24"
+          node-version: "26"
       - name: Install (pnpm, as packageManager pins it)
         run: |
           corepack enable
@@ -229,7 +229,7 @@ jobs:
       # npm 11.5+ publishes with trusted publishing (OIDC) and provenance, no token.
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: "24"
+          node-version: "26"
       - name: Publish (trusted publishing, provenance)
         env:
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && '--dry-run' || '' }}
