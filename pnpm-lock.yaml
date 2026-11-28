@@ -210,8 +210,8 @@ importers:
         specifier: 4.1.5
         version: 4.1.5
       oas-truth:
-        specifier: 0.6.1
-        version: 0.6.1(@apidevtools/swagger-parser@13.1.0(openapi-types@12.1.3))(@types/json-schema@7.0.15)(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/openapi3@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))(@typespec/openapi@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))))(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1))
+        specifier: 0.11.3
+        version: 0.11.3(@apidevtools/swagger-parser@13.1.0(openapi-types@12.1.3))(@types/json-schema@7.0.15)(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/openapi3@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))(@typespec/openapi@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))))(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1))
       oxfmt:
         specifier: ^0.75.0
         version: 0.75.0(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1))
@@ -1615,8 +1615,8 @@ packages:
     engines: {node: ^18 || >=20}
     hasBin: true
 
-  oas-truth@0.6.1:
-    resolution: {integrity: sha512-F+UPE5xuRYcG37AvbYAiN77m0msox3Bq51dAJ5GbkmlkkiYS1uyDTPuOqJVBoW0kMz4oY0RVRibx7G3W4OsBsA==}
+  oas-truth@0.11.3:
+    resolution: {integrity: sha512-yxPKrFZbYKgcNKewEKCVUxKwuAoNbU8BKo244n+rrEfGpPKTzvQrMlIx6x4Gs7xvZ9krU30AkXCBay70pRGQRA==}
     peerDependencies:
       '@apidevtools/swagger-parser': '>=12.0.0 <14.0.0'
       '@typespec/compiler': '>=1.11.0 <2.0.0'
@@ -1717,8 +1717,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  schema-truth@0.8.4:
-    resolution: {integrity: sha512-Jx34N+a1b5Ql8SwFNvKKHi8bB8pU5rQOm1BgZBYsUJX/MjH+jSj/HsIbj+ZIuDeur6hz13Uz0NRrTZSEODmOrA==}
+  schema-truth@0.13.6:
+    resolution: {integrity: sha512-nK9IyLdXVqgXiOHpXYVkGdPy3Pycrh7iQkXdOZXUQgV2bVyWvLSTSD3Q2zrgFubIOZxGLbvBrbtt1A7a9TwxNg==}
     hasBin: true
 
   semver@7.8.6:
@@ -1952,18 +1952,6 @@ packages:
     resolution: {integrity: sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww==}
     engines: {node: '>=18'}
 
-  ws@8.22.1:
-    resolution: {integrity: sha512-oyL6OPYme/CmiFvNuGzeoxCJ4nOrZE2O1FwM9MWM1AsGri6nLXB2pg+lNA8aLeXMSav0J6eIVS1j6vUPzUtK9g==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   ws@8.23.0:
     resolution: {integrity: sha512-wCkmX8QMOrKjgO8HW2WyDbTSGeqkocxgDzS9iR79rEAexty6/2qzilx3Ag8Tqf9ykop3irLKle0MtVn5qjVnoQ==}
     engines: {node: '>=10.0.0'}
@@ -2055,7 +2043,7 @@ snapshots:
     dependencies:
       '@types/ws': 8.18.2
       effect: 4.1.2
-      ws: 8.22.1
+      ws: 8.23.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2074,7 +2062,7 @@ snapshots:
       '@effect/platform-node-shared': 4.1.2(effect@4.1.2)
       effect: 4.1.2
       redis: 6.3.1
-      undici: 8.12.3
+      undici: 8.13.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -3012,12 +3000,12 @@ snapshots:
 
   nanoid@5.1.16: {}
 
-  oas-truth@0.6.1(@apidevtools/swagger-parser@13.1.0(openapi-types@12.1.3))(@types/json-schema@7.0.15)(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/openapi3@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))(@typespec/openapi@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))))(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1)):
+  oas-truth@0.11.3(@apidevtools/swagger-parser@13.1.0(openapi-types@12.1.3))(@types/json-schema@7.0.15)(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/openapi3@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))(@typespec/openapi@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))))(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1)):
     dependencies:
       '@apidevtools/swagger-parser': 13.1.0(openapi-types@12.1.3)
       '@typespec/compiler': 1.17.0(@types/node@24.19.4)
       '@typespec/openapi3': 1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4)))(@typespec/openapi@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))(@typespec/http@1.17.0(@typespec/compiler@1.17.0(@types/node@24.19.4))))
-      schema-truth: 0.8.4(@types/json-schema@7.0.15)(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1))
+      schema-truth: 0.13.6(@types/json-schema@7.0.15)(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1))
     transitivePeerDependencies:
       - '@astrojs/compiler-rs'
       - '@types/json-schema'
@@ -3163,7 +3151,7 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.19
       '@rolldown/binding-win32-x64-msvc': 1.2.19
 
-  schema-truth@0.8.4(@types/json-schema@7.0.15)(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1)):
+  schema-truth@0.13.6(@types/json-schema@7.0.15)(redis@6.3.1)(vite-plus@1.8.0(@types/node@24.19.4)(@vitest/browser-preview@5.1.1)(@vitest/ui@5.1.1)(typescript@5.9.3)(vite@8.3.8(@types/node@24.19.4)(yaml@2.9.1))(vitest@5.1.1)(yaml@2.9.1)):
     dependencies:
       '@apidevtools/json-schema-ref-parser': 16.0.5(@types/json-schema@7.0.15)
       '@effect/platform-node': 4.1.2(effect@4.1.2)(redis@6.3.1)
@@ -3414,8 +3402,6 @@ snapshots:
       ansi-styles: 6.2.3
       string-width: 7.2.0
       strip-ansi: 7.2.0
-
-  ws@8.22.1: {}
 
   ws@8.23.0: {}
 
