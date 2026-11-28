@@ -46,7 +46,7 @@
     "@typespec/compiler": "1.17.0",
     "@typespec/openapi3": "1.17.0",
     "effect": "4.1.5",
-    "oas-truth": "0.6.1",
+    "oas-truth": "0.11.3",
     "oxfmt": "^0.75.0"
   },
   "devDependencies": {
