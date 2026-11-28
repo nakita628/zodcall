@@ -52,7 +52,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "24.19.4",
+    "@types/node": "26.6.10",
     "zod": "4.6.7"
   },
   "peerDependencies": {
